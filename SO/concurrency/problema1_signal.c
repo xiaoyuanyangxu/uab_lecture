@@ -36,7 +36,6 @@ void lector_signal_handler(int sig) {
         if (fd < 0) {
             printf("\tLECTOR: error in opening file\n");
         }else{
-
             // Read the file
             read_file(fd, buffer, 100);
             printf("\tLECTOR: got %s\n", buffer);

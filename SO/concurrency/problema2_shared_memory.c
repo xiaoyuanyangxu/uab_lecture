@@ -22,7 +22,7 @@ int main() {
         var1 = 1;
         var2 = 0;
 
-        while(*torn != var1);  // You should open a TOP to see the CPU at 100%
+        while(*torn != var1){};  // You should open a TOP to see the CPU at 100%
 
         printf("\tSON: I'm in CRITICAL SECTION\n");
         sleep(5);
@@ -38,6 +38,7 @@ int main() {
         printf("FATHER: I'm in CRITICAL SECTION\n");
         sleep(5);
         printf("FATHER: I'm DONE\n");
+        
 
         memcpy(torn, &var2, sizeof(var2));
 
